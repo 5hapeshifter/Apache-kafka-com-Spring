@@ -19,7 +19,7 @@
             "name":"books",
             "type":{
                 "type": "array",
-                "items": "String"
+                "items": "string"
             }
         }
     ]
