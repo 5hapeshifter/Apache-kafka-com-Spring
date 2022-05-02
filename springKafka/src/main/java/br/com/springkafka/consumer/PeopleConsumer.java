@@ -29,7 +29,7 @@ public class PeopleConsumer {
         peopleEntity.setId(people.getId().toString());
         peopleEntity.setCpf(people.getCpf().toString());
         peopleEntity.setName(people.getName().toString());
-        peopleEntity.setBooks(people.getBooks().stream()
+        peopleEntity.setBooks(people.getBooks().stream() // Aqui estamos instanciando um novo objeto para cada um dos itens da lista
                 .map(book -> Book.builder()
                         .people(peopleEntity)
                         .name(book.toString())
